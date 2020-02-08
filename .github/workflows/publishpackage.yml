@@ -1,15 +1,20 @@
 name: Python package
 
-on: [push]
+on:
+  # Trigger the workflow on push request,
+  # but only for the master branch
+  push:
+    branches:
+      - master
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
     strategy:
-      max-parallel: 4
+      max-parallel: 1
       matrix:
-        python-version: [3.5, 3.6, 3.7]
+        python-version: [3.7]
 
     steps:
     - uses: actions/checkout@v1
@@ -32,3 +37,9 @@ jobs:
       run: |
         pip install pytest
         pytest
+    - name: Publishing it o distribution
+      run: |
+      	pip install 'twine>=1.5.0'
+      	python setup.py sdist bdist_wheel
+      	twine upload dist/*
+      	rm -fr build dist .egg mambaex.egg-info
