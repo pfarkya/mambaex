@@ -42,6 +42,7 @@ jobs:
         PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
       run: |
         pip install 'twine>=1.5.0'
+        pip install wheel
         python setup.py sdist bdist_wheel
         twine upload dist/* -u $PYPI_USERNAME -p $PYPI_PASSWORD
         rm -fr build dist .egg mambaex.egg-info
