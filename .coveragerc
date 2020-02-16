@@ -1,2 +1,2 @@
 [run]
-omit = mambaex/packages/*
+omit = mambaex/packages/*, example/*
