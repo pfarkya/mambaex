@@ -10,6 +10,15 @@ API Documentation will go here
     :inherited-members:
     :show-inheritance:
 
+.. autoclass:: MambaexApps
+    :members:
+    :undoc-members:
+    :inherited-members:
+    :show-inheritance:
 
-
-.. autofunction:: getServer
+.. _MambaexApp:
+.. autoclass:: mambaex.mambaexApp::MambaexApp
+    :members:
+    :undoc-members:
+    :inherited-members:
+    :show-inheritance:
