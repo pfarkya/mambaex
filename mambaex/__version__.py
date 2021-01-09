@@ -1,7 +1,7 @@
 __title__ = 'mambaex'
 __description__ = 'Python HTTP Server for Humans.'
 __url__ = 'https://mambaex.readthedocs.io'
-__version__ = '0.0.1-alpha.3'
+__version__ = '0.0.2-beta.2'
 __build__ = 0x022200
 __author__ = 'Prashant Farkya'
 __author_email__ = 'prashant.farkya@gmail.com'

@@ -39,7 +39,7 @@ if sys.argv[-1] == 'publish':
     os.system('twine upload dist/*')
     sys.exit()
 
-packages = ['mambaex']
+packages = ['mambaex', 'mambaex.helper']
 
 requires = [
     'chardet>=3.0.2,<3.1.0',

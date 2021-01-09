@@ -13,3 +13,8 @@ Mambaex is an HTTP server library
 Release and Version History
 ===========================
 .. include:: ../HISTORY.md
+
+
+How to Contribute to Mambaex
+============================
+.. include:: ../CONTRIBUTING.md
